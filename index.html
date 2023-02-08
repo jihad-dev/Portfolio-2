@@ -4,89 +4,298 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-	<link rel="stylesheet" href="./style.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./design.css" />
     <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css" />
   </head>
   <body>
     <!-- HEADER AREA START -->
-    <header class="site-header" id="site-header">
-      <nav class="navbar navbar-expand-xl bg " id="site-navbar">
-        <div class="container">
-        
-          <h1 class="text-white">jihad</h1>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="./image/lo.png" alt="" />
+          <!-- <a class="navbar-brand ms-5 a-item fs-3" href="#">jihad</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-     
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-lg-0 color-font ">
-              <a class="nav-link" aria-current="page" href="#site-header"
-                >Home</a
-              >
-              <a class="nav-link" href="#about-section">About</a>
-              <a class="nav-link" href="#portfolio-section">Portfolio</a>
-              <a class="nav-link" href="#service-section">Service</a>
-              <a class="nav-link" href="#testimonial-section">Testimonials</a>
-              <a class="nav-link" href="#blog-section">Blog</a>
-              <a class="nav-link" href="#contact-section">Contact</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto a-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#"> Portfolio</a>
+              <a class="nav-link" href="#"> Service</a>
+              <a class="nav-link" href="#"> Testimonials</a>
+              <a class="nav-link" href="#"> Blog</a>
+              <a class="nav-link" href="#"> Contact</a>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
     <!-- HEADER AREA END -->
 
-
     <!-- BANNER AREA START  -->
-  
-	<div id="banner-background ">
-		<div class="container-fluid text-center bg">
-			<div class="row row-cols-2">
-			  <div class="col d-flex justify-content-center ">
-				<div class="title-area ">
-					<h5 class="card-title fw-bold mb-3 ">Hello,i am</h5>
-					<h2 class="card-title font fw-bold text-light">Jihadul </h2>
-					<h1 class="card-title  font text fw-bold mb-3">Islam </h1>
-					<div class="card-body">
-					  <h5 class="card-title title-text mb-2">And I'm a</h5>
-					  <span class="typing"> </span>
-					</div>
-				 </div>
-			  </div>
-			  <div class="col">
-          <div class="image-wrapper" data-tilt data-tilt-max="10">
-       
-            <img
-              class="img-fluid"
-              src="image/hero_main_image.png"
-              alt="hero main image"
-            />
+
+    <section class="mt-3">
+      <div class="bg">
+        <div class="row">
+          <div class="col-sm-6 mb-3 mb-sm-0 ps-5">
+            <div class="">
+              <div class="title-1">
+                <p class="card-text ms-5 fs-2 text-white mt-5">Hello, I'm</p>
+                <h1 class="card-title">jihad</h1>
+                <!-- <img src="./image/jihad.png" class="rounded img-fluid title-img" alt="...">
+                <img src="./image/islam.png" class="rounded img-fluid title-img" alt="..."> -->
+                <h1 class="card-title">Islam</h1>
+                <h4 class="card-title ms-5 mt-5 text-white">
+                  And I am a <span class="typing"></span>
+                </h4>
+
+                <div class="d-flex align-items-center ms-5 mt-4">
+                  <button type="button" class="btn btn-primary btn-lg">
+                    CONTACT ME
+                  </button>
+                  <div class="ms-5">
+                    <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-			</div>
-		  </div>
-	</div>
+          <div class="col-sm-6">
+            <div>
+              <div>
+                <div
+                  class="your-element"
+                  data-tilt
+                  data-tilt-max="10"
+                  data-tilt-speed="400"
+                  data-tilt-perspective="500"
+                >
+                  <div class="text-center d-none d-sm-block">
+                    <img
+                      src="./image/hero_main_image.png"
+                      class="rounded mt-5 hero-img"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- BANNER AREA END -->
 
+    <!-- INTRO SECTION -->
+    <div class="container">
+      <div class="text-center mt-5">
+        <h5 class="card-title fw-bold fs-3 mb-4">WELCOME TO MY WORLD</h5>
+        <p class="card-text fs-5">
+          I'm a young tech enthasist and entrepreneur who love to take risk.
+          <br />
+          I grew up in a tech family in New York City.
+        </p>
+      </div>
 
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+        <div class="col">
+          <div class="card" style="height: 280px">
+            <div class="card-body p-5 mt-5">
+              <h5 class="card-title">Creativity</h5>
+              <p class="card-text">
+                Duis aute irure dolor in it esse cillum dolore eu fugiat nulla
+                pari erunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 280px">
+            <div class="card-body p-5 mt-5">
+              <h5 class="card-title">Dedication</h5>
+              <p class="card-text">
+                Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu
+                fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="height: 280px">
+            <div class="card-body p-5 mt-5">
+              <h5 class="card-title">Hard Work</h5>
+              <p class="card-text">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui offi llit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .intro-section -->
 
+    <!-- About me start -->
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div>
+            <div
+              class="img-wrapper about-img-wrap"
+              data-tilt
+              data-tilt-max="10"
+            >
+              <img
+                class="about-img-1 img-fluid mt-5 w-75 d-none d-sm-block"
+                src="./image/about-image-1.png"
+                alt="about image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-5 mb-5">
+          <div>
+            <div class="card-body">
+              <h5 class="card-title mb-3">ABOUT ME</h5>
+              <h1 class="card-title mb-3">I develop Websites & Business</h1>
+              <p class="card-text fs-5">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum. Tabore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex">
+                <div>
+                  <p class="fw-bold mt-3">NAME</p>
+                  <span>jihad Islam</span>
+                  <p class="mt-3 fw-bold">EMAIL</p>
+                  <span>hello@jamesanderson.com</span>
+                  <p class="mt-3 fw-bold">PHONE</p>
+                  <span>+123 456 7890</span>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-lg d-block mt-4 px-5"
+                  >
+                    DOWNLOAD CV
+                  </button>
+                </div>
+                <div class="ms-5">
+                  <p class="fw-bold mt-3">AGE</p>
+                  <span> 18 Years</span>
+                  <p class="mt-3 fw-bold">EDUCATION</p>
+                  <span> Bachelors in Physics</span>
+                  <p class="mt-3 fw-bold">FREELANCE</p>
+                  <span>Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About me end -->
+    <!-- SKILL SECTION -->
+    <section class="skill-section section-block" id="skill-section">
+      <div class="container">
+        <h3 class="text-center fs-1 mt-3 mb-3 fw-bolder">My skills</h3>
+        <h5 class="text-center mb-5 text-danger">What i Know</h5>
+        <div class="row">
+          <div
+            class="col-xl-6 content-block mt-5">
+            <h2>
+              My creative skills & experiences.
+            </h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
+            </p>
+          </div>
+          <div class="col-xl-6 progress-block">
+            <div class="progress-wrapper">
+              <h4>Competitive Programming</h4>
+              <p class="progress-value">84%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 84%"
+                  aria-valuenow="84"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Algorithm &amp; Data Structure</h4>
+              <p class="progress-value">50%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Game Development</h4>
+              <p class="progress-value">75%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <h4>Web Application</h4>
+              <p class="progress-value">96%</p>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 96%"
+                  aria-valuenow="96"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .row -->
+      </div>
+      <!-- .container -->
+    </section>
+    <!-- .skill-section -->
 
-
-
-
-
-
-
-
-
-
-
-
-	<!-- <script src="./js/particles.js"></script>
-	<script src="./js/app.js"></script> -->
-   <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/textition.js"></script>
+    <script src="./js/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="./boostrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
