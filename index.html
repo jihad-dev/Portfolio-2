@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/fontawesome.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./design.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./boostrap/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- HEADER AREA START -->
@@ -32,11 +34,12 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto a-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#"> Portfolio</a>
-              <a class="nav-link" href="#"> Service</a>
+              <a class="nav-link" href="#about-section">About</a>
+              <a class="nav-link" href="#skill-section">skills</a>
+              <a class="nav-link" href="#Service-section"> Service</a>
+              <a class="nav-link" href="#portfolio-section"> Portfolio</a>
               <a class="nav-link" href="#"> Testimonials</a>
-              <a class="nav-link" href="#"> Blog</a>
+              <a class="nav-link" href="#">Team</a>
               <a class="nav-link" href="#"> Contact</a>
             </ul>
           </div>
@@ -59,7 +62,7 @@
                 <img src="./image/islam.png" class="rounded img-fluid title-img" alt="..."> -->
                 <h1 class="card-title">Islam</h1>
                 <h4 class="card-title ms-5 mt-5 text-white">
-                  And I am a <span class="typing"></span>
+                  And I'm a <span class="typing"></span>
                 </h4>
 
                 <div class="d-flex align-items-center ms-5 mt-4">
@@ -116,35 +119,45 @@
 
       <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
         <div class="col">
-          <div class="card" style="height: 280px">
-            <div class="card-body p-5 mt-5">
-              <h5 class="card-title">Creativity</h5>
-              <p class="card-text">
-                Duis aute irure dolor in it esse cillum dolore eu fugiat nulla
-                pari erunt mollit anim id est laborum.
-              </p>
+          <div data-aos="flip-left">
+            <div class="card" style="height: 280px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title">Creativity</h5>
+                <p class="card-text">
+                  Duis aute irure dolor in it esse cillum dolore eu fugiat nulla
+                  pari erunt mollit anim id est laborum.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="height: 280px">
-            <div class="card-body p-5 mt-5">
-              <h5 class="card-title">Dedication</h5>
-              <p class="card-text">
-                Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu
-                fugiat nulla pariatur.
-              </p>
+        <div data-aos="zoom-in-up">
+          <div class="col">
+            <div class="card" style="height: 280px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title">Dedication</h5>
+                <p class="card-text">
+                  Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu
+                  fugiat nulla pariatur.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="height: 280px">
-            <div class="card-body p-5 mt-5">
-              <h5 class="card-title">Hard Work</h5>
-              <p class="card-text">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui offi llit anim id est laborum.
-              </p>
+        <div
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <div class="card" style="height: 280px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title">Hard Work</h5>
+                <p class="card-text">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui offi llit anim id est laborum.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -154,10 +167,10 @@
 
     <!-- About me start -->
 
-    <div class="container">
+    <div class="container" id="about-section">
       <div class="row">
         <div class="col-sm-6 mb-3 mb-sm-0">
-          <div>
+          <div data-aos="fade-right">
             <div
               class="img-wrapper about-img-wrap"
               data-tilt
@@ -172,40 +185,42 @@
           </div>
         </div>
         <div class="col-sm-6 mt-5 mb-5">
-          <div>
-            <div class="card-body">
-              <h5 class="card-title mb-3">ABOUT ME</h5>
-              <h1 class="card-title mb-3">I develop Websites & Business</h1>
-              <p class="card-text fs-5">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum. Tabore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="d-flex">
-                <div>
-                  <p class="fw-bold mt-3">NAME</p>
-                  <span>jihad Islam</span>
-                  <p class="mt-3 fw-bold">EMAIL</p>
-                  <span>hello@jamesanderson.com</span>
-                  <p class="mt-3 fw-bold">PHONE</p>
-                  <span>+123 456 7890</span>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-lg d-block mt-4 px-5"
-                  >
-                    DOWNLOAD CV
-                  </button>
-                </div>
-                <div class="ms-5">
-                  <p class="fw-bold mt-3">AGE</p>
-                  <span> 18 Years</span>
-                  <p class="mt-3 fw-bold">EDUCATION</p>
-                  <span> Bachelors in Physics</span>
-                  <p class="mt-3 fw-bold">FREELANCE</p>
-                  <span>Available</span>
+          <div data-aos="fade-left">
+            <div>
+              <div class="card-body">
+                <h5 class="card-title mb-3">ABOUT ME</h5>
+                <h1 class="card-title mb-3">I develop Websites & Business</h1>
+                <p class="card-text fs-5">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum. Tabore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="d-flex">
+                  <div>
+                    <p class="fw-bold mt-3">NAME</p>
+                    <span>jihad Islam</span>
+                    <p class="mt-3 fw-bold">EMAIL</p>
+                    <span>hello@jamesanderson.com</span>
+                    <p class="mt-3 fw-bold">PHONE</p>
+                    <span>+123 456 7890</span>
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary btn-lg d-block mt-4 px-4"
+                    >
+                      DOWNLOAD CV
+                    </button>
+                  </div>
+                  <div class="ms-5">
+                    <p class="fw-bold mt-3">AGE</p>
+                    <span> 18 Years</span>
+                    <p class="mt-3 fw-bold">EDUCATION</p>
+                    <span> Bachelors in Physics</span>
+                    <p class="mt-3 fw-bold">FREELANCE</p>
+                    <span>Available</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -220,70 +235,76 @@
         <h3 class="text-center fs-1 mt-3 mb-3 fw-bolder">My skills</h3>
         <h5 class="text-center mb-5 text-danger">What i Know</h5>
         <div class="row">
-          <div
-            class="col-xl-6 content-block mt-5">
-            <h2>
-              My creative skills & experiences.
-            </h2>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.
-            </p>
+          <div class="col-xl-6 content-block mt-5">
+            <div data-aos="fade-up" data-aos-duration="1200">
+              <h2>My creative skills & experiences.</h2>
+              <p class="lead text-black">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, ratione error est recusandae consequatur, iusto
+                illum deleniti quidem impedit, quos quaerat quis minima sequi.
+                Cupiditate recusandae laudantium esse, harum animi aspernatur
+                quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem
+                illum. Ad delectus natus aut hic explicabo minus quod.
+              </p>
+            </div>
           </div>
           <div class="col-xl-6 progress-block">
-            <div class="progress-wrapper">
-              <h4>Competitive Programming</h4>
-              <p class="progress-value">84%</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 84%"
-                  aria-valuenow="84"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+            <div data-aos="fade-left">
+              <div class="progress-wrapper">
+                <h4>Competitive Programming</h4>
+                <p class="progress-value">84%</p>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 84%"
+                    aria-valuenow="84"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper">
-              <h4>Algorithm &amp; Data Structure</h4>
-              <p class="progress-value">50%</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div class="progress-wrapper">
+                <h4>Algorithm &amp; Data Structure</h4>
+                <p class="progress-value">50%</p>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper">
-              <h4>Game Development</h4>
-              <p class="progress-value">75%</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div class="progress-wrapper">
+                <h4>Game Development</h4>
+                <p class="progress-value">75%</p>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="progress-wrapper">
-              <h4>Web Application</h4>
-              <p class="progress-value">96%</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 96%"
-                  aria-valuenow="96"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div class="progress-wrapper">
+                <h4>Web Application</h4>
+                <p class="progress-value">96%</p>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 96%"
+                    aria-valuenow="96"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
@@ -294,10 +315,568 @@
     </section>
     <!-- .skill-section -->
 
+    <!-- portfolio section start -->
+
+    <div class="container" id="portfolio-section">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center mt-5">
+            <h5 class="card-title mb-4 fw-bolder fs-1">PORTFOLIO</h5>
+            <p class="fs-5">
+              Duis aute irure dolor in reprehen pteur sint occaecat cupidatat
+              non <br />
+              proident, sunt in culim id est.
+            </p>
+          </div>
+          <ul class="filters text-center">
+            <li class="active" data-filter="*"><a href="#!">All</a></li>
+            <li data-filter=".html"><a href="#!">Programming</a></li>
+            <li data-filter=".css"><a href="#!">Development</a></li>
+            <li data-filter=".javascript"><a href="#!">Design</a></li>
+          </ul>
+
+          <div class="projects">
+            <div class="row">
+              <div class="col-lg-4 item html">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-01.jpg"
+                      alt=""
+                      class="img-fluid img-thumbnail img-item"
+                    />
+                    <div class="card-overlay"><h2>PROGRAMMING</h2></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item css">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-02.jpg"
+                      alt=""
+                      class="img-fluid card-img img-thumbnail img-item"
+                    />
+                    <div class="card-overlay"><h2>CSS</h2></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item javascript">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-03.jpg"
+                      alt=""
+                      class="img-fluid card-img img-thumbnail"
+                    />
+                    <div class="card-overlay"><h2>Javascript</h2></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item html">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-04.jpg"
+                      alt=""
+                      class="img-fluid card-img img-thumbnail"
+                    />
+                    <div class="card-overlay"><h2>HTML</h2></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item css">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-05.jpg"
+                      alt=""
+                      class="img-fluid card-img img-thumbnail"
+                    />
+                    <div class="card-overlay"><h2>CSS</h2></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 item html">
+                <div class="card">
+                  <div class="card-head">
+                    <img
+                      src="./image/portfolio/portfolio-item-06.jpg"
+                      alt=""
+                      class="img-fluid card-img img-thumbnail"
+                    />
+                    <div class="card-overlay"><h2>HTML</h2></div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio section end -->
+
+    <!-- SERVICE SECTION START -->
+
+    <section
+      class="mt-4 mb-5"
+      style="background-color: #303c46"
+      id="Service-section"
+    >
+      <div class="container">
+        <div class="text-center mt-5">
+          <h5 class="card-title fw-bold fs-3 mb-4 text-white mt-5">SERVICE</h5>
+          <p class="card-text fs-5 text-white">
+            Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non
+            <br />
+            proident, sunt in culim id est.
+          </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div class="border border-danger rounded-3" style="height: 320px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white">Desktop Apps</h5>
+                <p class="card-text text-white">
+                  Yeprehe nderit in voluptate velit esse prehen pteur sint
+                  occaecat cupidat cillum dolore eu fugiat nulla pan proide ulpa
+                  rum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div class="border border-success rounded-3" style="height: 320px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white-50">Mobile Apps</h5>
+                <p class="card-text text-white">
+                  Nulla sit amet maximus mass abitur et pharetra metus nec
+                  hendrerit enim iam condime justo at luctus ore pag torem
+                  comodo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div class="border border-danger rounded-3" style="height: 320px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white">Web Development</h5>
+                <p class="card-text text-white">
+                  Donec sed magna uspen disse ac males uasuda lacus orekom
+                  nipsume dolor sit amet ectetur adip iscing elit eget ullamc
+                  dana.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div class="border border-danger rounded-3" style="height: 320px">
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white">Security System</h5>
+                <p class="card-text text-white">
+                  Donec sed magna uspen disse ac males uasuda lacus orekom
+                  nipsume dolor sit amet ectetur adip iscing elit eget ullamc
+                  dana.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div
+              class="border border-success rounded-3 mb-5"
+              style="height: 320px"
+            >
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white">Custom Algorithm</h5>
+                <p class="card-text text-white">
+                  Quisque ultricies nibh eu sapien convallis, at sollicitudin
+                  lacus mattis. Ut fringilla, eros vitae consequa proide nesha.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col hover"
+            data-tilt
+            data-tilt-speed="400"
+            data-tilt-perspective="500"
+          >
+            <div
+              class="border border-info rounded-3 mb-5"
+              style="height: 320px"
+            >
+              <div class="card-body p-5 mt-5">
+                <h5 class="card-title text-white">Web Consulting</h5>
+                <p class="card-text text-white">
+                  Aliquam aliquam mi nisl, quis condim entum felis auctor vita
+                  sellus egestas eros scelerisque suscipit impe rdiet eque
+                  nulla.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE SECTION END -->
+
+    <!-- Swiper -->
+
+    <div class="container">
+      <section class="team">
+        <h5 class="card-title fw-bolder fs-1 text-center">TESTIMONIALS</h5>
+        <p class="text-center fs-5 mt-3">
+          Duis aute irure dolor in reprehen pteur sint occaecat cupidatat non
+          <br />
+          proident, sunt in culim id est.
+        </p>
+        <div class="swiper team-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="swiper-slide slide">
+              <div class="col">
+                <div data-aos="flip-left">
+                  <div class="card" style="height: 280px">
+                    <div class="card-body p-5 mt-3">
+                      <p class="card-text">
+                        Ut enim ad minim veniam quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute ir cm id est laborum.
+                      </p>
+                      <div class="d-flex">
+                        <img class="img-fluid img-thumbnail" src="./image/logo.png" alt="">
+                        <h5 class="card-title">Creativity</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn-team"></div>
+          <div class="swiper-button-prev nav-btn-team"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Swiper JS -->
+
+      <!-- Team  SECTION -->
+      <div class="container">
+        <div class="text-center mt-5">
+          <h5 class="card-title fw-bold fs-3 mb-4">Our Team</h5>
+        </div>
+  
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+          <div class="col">
+            <div data-aos="flip-left">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Creativity</h5>
+                  <p class="card-text">
+                    Duis aute irure dolor in it esse cillum dolore eu fugiat nulla
+                    pari erunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-up">
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Dedication</h5>
+                  <p class="card-text">
+                    Beaboris nisi ut aliquip ex ea commodo consen cillum dolore eu
+                    fugiat nulla pariatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Hard Work</h5>
+                  <p class="card-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui offi llit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Hard Work</h5>
+                  <p class="card-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui offi llit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Hard Work</h5>
+                  <p class="card-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui offi llit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
+            <div class="col">
+              <div class="card" style="height: 280px">
+                <div class="card-body p-5 mt-5">
+                  <h5 class="card-title">Hard Work</h5>
+                  <p class="card-text">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui offi llit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- team section -->
+
+   
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("contextmenu", function (jihad) {
+        alert("right clicked disabled hahahahahah🤣🤣");
+        jihad.preventDefault();
+      });
+    </script>
+    <script>
+      /** TO DISABLE PRINTS WHIT CTRL+P **/
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key == "p") {
+          alert("This section is not allowed to print or export to PDF");
+          e.cancelBubble = true;
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      });
+    </script>
+    <script>
+      document.onkeydown = function (e) {
+        if (e.ctrlKey && e.keyCode === 85) {
+          e.preventDefault();
+        }
+      };
+    </script>
+    <!-- Initialize Swiper -->
+
     <script src="./js/textition.js"></script>
+    <script src="./js/isotope.min.js"></script>
     <script src="./js/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./boostrap/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
